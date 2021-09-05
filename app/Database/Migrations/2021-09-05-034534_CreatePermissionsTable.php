@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreateUsersTable extends Migration
+class CreatePermissionsTable extends Migration
 {
 	public function up()
 	{
@@ -18,21 +18,20 @@ class CreateUsersTable extends Migration
 			],
 			'name'       => [
 				'type'       => 'VARCHAR',
-				'constraint' => '100',
-			],
-			'email' => [
-				'type' => 'VARCHAR',
 				'constraint' => 200,
-				'unique' => true,
+			],
+			'permission'       => [
+				'type'       => 'VARCHAR',
+				'constraint' => 200,
 			],
 		], generateTimestamps()));
 
 		$this->forge->addKey('id', true);
-		$this->forge->createTable('users');
+		$this->forge->createTable('permissions');
 	}
 
 	public function down()
 	{
-		$this->forge->dropTable('users');
+		$this->forge->dropTable('permissions');
 	}
 }
