@@ -1,0 +1,46 @@
+.custom-sidebar {
+  padding: 1.5rem 0.5rem;
+  min-height: 100vh;
+}
+
+.side-link {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  color: var(--bs-white);
+  font-weight: 500;
+  transition: background-color 0.8s;
+}
+
+.side-link + .side-link {
+  margin-top: 0.5rem;
+}
+
+.side-link.active {
+  background-color: var(--bs-secondary);
+}
+
+.nav-link:visited {
+  color: var(--bs-white);
+}
+
+.nav-link:hover {
+  background-color: var(--bs-secondary);
+  color: var(--bs-white);
+}
+
+.side-link .feather {
+  margin-right: 0.4rem;
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  stroke-width: 2.3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+main {
+  display: flex;
+}
