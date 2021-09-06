@@ -1,5 +1,5 @@
 .custom-sidebar {
-  padding: 1.5rem 0.5rem;
+  padding: 1.5rem 0.2rem;
   min-height: 100vh;
 }
 
@@ -41,6 +41,10 @@
   fill: none;
 }
 
-main {
-  display: flex;
+.form-control {
+  border-width: 0.09rem;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
 }

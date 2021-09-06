@@ -13,11 +13,18 @@
 <body>
     <main class="bg-light" style="height: 100vh">
         <div class="container-fluid d-flex flex-wrap justify-content-center align-items-center h-100">
-            <div class="card col-12 col-md-6">
-                <div class="card-body">
-                    <form method="post" class="d-grid gap-2" action="<?php echo base_url('auth/login') ?>" accept-charset="utf-8">
-                        <input class="form-control" type="text" name="email">
-                        <input class="form-control" type="password" name="password">
+            <div class="card col-12 col-md-4">
+                <div class="card-body text-center">
+                    <h2>Bem-vindo</h2>
+                    <form method="post" class="d-grid gap-4" action="<?php echo base_url('auth/login') ?>" accept-charset="utf-8">
+                    <div class="text-start">
+                        <label for="email">E-mail</label>
+                        <input class="form-control form-control-lg" placeholder="informe o seu e-mail" type="text" name="email">
+                    </div>    
+                    <div class="text-start">
+                        <label for="email">Senha</label>
+                        <input class="form-control form-control-lg" placeholder="Informe sua senha" type="password" name="password">
+                    </div>
                         <button class="btn btn-grid btn-dark" type="submit">Login</button>
                     </form>
                 </div>

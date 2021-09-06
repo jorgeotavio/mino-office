@@ -12,9 +12,9 @@
 
 <body>
     <?php echo view('components/navbar') ?>
-    <main class="bg-light">
+    <main class="bg-light d-flex">
         <?php echo view('components/sidebar') ?>
-        <div class="container-fluid d-flex flex-wrap">
+        <div class="container-fluid pt-2">
             <?php echo isset($page_content) ? view($page_content) : ""  ?>
         </div>
     </main>

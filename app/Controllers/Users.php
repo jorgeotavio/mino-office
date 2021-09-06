@@ -4,8 +4,13 @@ namespace App\Controllers;
 
 use App\Models\UserModel;
 
-class UsersController extends BaseController
+class Users extends BaseController
 {
+    public function index(){
+        $data = ['page_content' => 'pages/users/index'];
+        return view('layouts/main', $data);
+    }
+
     public function store()
     {
         helper(['form']);
