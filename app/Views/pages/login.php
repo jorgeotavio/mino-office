@@ -11,11 +11,17 @@
 </head>
 
 <body>
-    <?php echo view('components/navbar') ?>
-    <main class="bg-light">
-        <?php echo view('components/sidebar') ?>
-        <div class="container-fluid d-flex flex-wrap">
-            <?php echo isset($page_content) ? view($page_content) : ""  ?>
+    <main class="bg-light" style="height: 100vh">
+        <div class="container-fluid d-flex flex-wrap justify-content-center align-items-center h-100">
+            <div class="card col-12 col-md-6">
+                <div class="card-body">
+                    <form method="post" class="d-grid gap-2" action="<?php echo base_url('auth/login') ?>" accept-charset="utf-8">
+                        <input class="form-control" type="text" name="email">
+                        <input class="form-control" type="password" name="password">
+                        <button class="btn btn-grid btn-dark" type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
     <script src="<?php echo base_url('assets/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>

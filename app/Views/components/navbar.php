@@ -11,7 +11,7 @@
           <li><a class="dropdown-item" href="#">Meu Perfill</a></li>
           <li><a class="dropdown-item" href="#">Configurações</a></li>
           <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Sair</a></li>
+          <li><a class="dropdown-item" href="<?php echo base_url('auth/logout')?>">Sair</a></li>
         </ul>
         </li>
       </div>
